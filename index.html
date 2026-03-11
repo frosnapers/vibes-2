@@ -1,27 +1,53 @@
 <!DOCTYPE html>
+<!-- Use HTML5 so modern layout, typography, and accessibility features work as expected -->
 <html lang="en">
 <head>
+    <!-- Ensure text (including icons and punctuation) renders consistently across browsers -->
     <meta charset="UTF-8">
+
+    <!-- Make the layout responsive so cards look good on phones, tablets, and desktops -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Text shown in the browser tab for this pricing page -->
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Performance hints: open early connections to Google Fonts servers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Load the Inter font family used by the design system -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main stylesheet that controls all spacing, colors, and typography -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p class="page-label"><strong>HTML version</strong> — static markup</p>
+    <!-- Fixed label at the top explaining this is the plain HTML version -->
+    <p class="page-label">
+        <strong>HTML version</strong> — static markup
+    </p>
+
+    <!-- Flex container that holds all pricing cards side‑by‑side -->
     <div class="cards-container">
+
+        <!-- Pricing card for the free Hobby plan -->
         <div class="card">
+            <!-- Top portion of the card: plan name, price, and feature bullets -->
             <div class="card-top">
+                <!-- Plan name styling comes from .card-title in CSS -->
                 <h3 class="card-title">Hobby</h3>
+
+                <!-- Price row; kept simple here since the plan is free -->
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+
+                <!-- Feature list section describing what is included in this plan -->
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
                         <li>
+                            <!-- Checkmark icon aligned with text via flex styles -->
                             <span class="checkmark">✓</span>
                             No credit card required
                         </li>
@@ -36,16 +62,24 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Secondary call‑to‑action for the Hobby plan -->
             <button class="download-button secondary">Download</button>
         </div>
 
         <div class="card">
+            <!-- Top portion of the card: plan name, price, and expanded feature list -->
             <div class="card-top">
+                <!-- Plan name for the Pro tier -->
                 <h3 class="card-title">Pro</h3>
+
+                <!-- Price row with amount and billing period split for styling control -->
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+
+                <!-- Feature section outlining what is added on top of Hobby -->
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
@@ -68,6 +102,8 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Primary call‑to‑action; styled to stand out as the main choice -->
             <button class="download-button primary">Get Pro</button>
         </div>
 
